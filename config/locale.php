@@ -49,5 +49,6 @@ return [
         'sv'    => ['sv', 'sv_SE', false],
         'th'    => ['th', 'th_TH', false],
         'tr'    => ['tr', 'tr_TR', false],
+        'vi'    => ['vi', 'vi_VI', false],
     ],
 ];

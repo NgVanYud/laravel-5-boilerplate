@@ -40,7 +40,61 @@
                         </li>
                     </ul>
                 </li>
+
+            {{--2--}}
             @endif
+
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/auth/category*'), 'open') }}">
+                <a class="nav-link nav-dropdown-toggle" href="#">
+                    <i class="fa fa-calendar-minus-o" aria-hidden="true"></i> {{ __('labels.backend.access.category.title') }}
+
+                    @if ($pending_approval > 0)
+                        <span class="badge badge-danger">{{ $pending_approval }}</span>
+                    @endif
+                </a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link {{ active_class(Active::checkUriPattern('category/*')) }}" href="{{ route('backend.category.index') }}">
+                            {{ __('labels.backend.access.category.all') }}
+
+                            {{--@if ($pending_approval > 0)--}}
+                            {{--<span class="badge badge-danger">{{ $pending_approval }}</span>--}}
+                            {{--@endif--}}
+                        </a>
+                    </li>
+                    {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link {{ active_class(Active::checkUriPattern('category/*')) }}" href="{{ route('backend.category.approve') }}">--}}
+                    {{--{{ __('labels.backend.access.category.approve') }}--}}
+                    {{--</a>--}}
+                    {{--</li>--}}
+                </ul>
+            </li>
+
+            {{--3--}}
+            <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('post/*'), 'open') }}">
+                <a class="nav-link nav-dropdown-toggle" href="#">
+                    <i class="fa fa-calendar-minus-o" aria-hidden="true"></i> {{ __('labels.backend.access.post.title') }}
+
+                </a>
+
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link {{ active_class(Active::checkUriPattern('category/*')) }}" href="{{route('backend.post.index')}}">
+                        {{ __('labels.backend.access.post.all') }}
+
+                        {{--@if ($pending_approval > 0)--}}
+                        {{--<span class="badge badge-danger">{{ $pending_approval }}</span>--}}
+                        {{--@endif--}}
+                        </a>
+                    </li>
+                    {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link {{ active_class(Active::checkUriPattern('post/*')) }}" href="{{ route('backend.post.approve') }}">--}}
+                    {{--{{ __('labels.backend.access.post.approve') }}--}}
+                    {{--</a>--}}
+                    {{--</li>--}}
+                </ul>
+            </li>
 
             <li class="nav-item nav-dropdown {{ active_class(Active::checkUriPattern('admin/log-viewer*'), 'open') }}">
                 <a class="nav-link nav-dropdown-toggle" href="#">

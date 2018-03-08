@@ -48,6 +48,7 @@ return [
             'general'   => 'Γενικά',
             'system'    => 'Σύστημα',
         ],
+
     ],
 
     'language-picker' => [

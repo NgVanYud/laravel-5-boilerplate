@@ -35,6 +35,21 @@ return [
                 'main'            => 'Users',
                 'view'            => 'View User',
             ],
+            'category' => [
+                'all'        => 'All Cateogries',
+                'create'     => 'Create Category',
+                'edit'       => 'Edit Category',
+                'management' => 'Category Management',
+                'main'       => 'Categories',
+            ],
+
+            'post' => [
+                'all'        => 'All Post',
+                'create'     => 'Create Post',
+                'edit'       => 'Edit Post',
+                'management' => 'Post Management',
+                'main'       => 'Posts',
+            ],
         ],
 
         'log-viewer' => [
@@ -47,6 +62,10 @@ return [
             'dashboard' => 'Dashboard',
             'general'   => 'General',
             'system'    => 'System',
+        ],
+
+        'post' => [
+            'post' => 'My posts'
         ],
     ],
 

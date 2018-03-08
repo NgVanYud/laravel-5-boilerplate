@@ -2,6 +2,7 @@
 
 namespace App\Http;
 
+use App\Http\Middleware\PermissionAuthentication;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
 /**
@@ -50,6 +51,26 @@ class Kernel extends HttpKernel
             'auth',
             'password_expires',
             'permission:view backend',
+            'permission:system category manager',
+            'permission:system post manager',
+            'permission:system user manager',
+            'permission:post manager',
+        ],
+
+        'admod' => [
+            'auth',
+            'password_expires',
+            'permission:view backend',
+            'permission:system category manager',
+            'permission:system post manager',
+            'permission:post manager',
+
+        ],
+
+        'author' => [
+            'auth',
+            'password_expires',
+            'permission:post manager'
         ],
     ];
 

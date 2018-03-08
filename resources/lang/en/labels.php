@@ -17,10 +17,12 @@ return [
         'all'     => 'All',
         'yes'     => 'Yes',
         'no'      => 'No',
+        'num'      => 'Num',
         'copyright' => 'Copyright',
         'custom'  => 'Custom',
         'actions' => 'Actions',
         'active'  => 'Active',
+        'public' => 'Public',
         'buttons' => [
             'save'   => 'Save',
             'update' => 'Update',
@@ -30,6 +32,8 @@ return [
         'none'              => 'None',
         'show'              => 'Show',
         'toggle_navigation' => 'Toggle Navigation',
+        'created_at'       => 'Created at',
+        'updated_at'       => 'Updated at',
     ],
 
     'backend' => [
@@ -104,6 +108,41 @@ return [
 
                 'view' => 'View User',
             ],
+
+            'category' => [
+                'title' => 'Category',
+                'all' => 'All',
+                'approve' => 'Approve',
+                'management' => 'Category Management',
+                'create' => 'Create Category',
+                'edit' => 'Edit Category',
+
+                'table' => [
+                    'title' => 'Title',
+                    'post_counter'     => 'Number of post',
+                    'active'           => 'Active',
+                    'total'           => 'category total|categories total',
+                ],
+            ],
+
+            'post' => [
+                'title' => 'Post',
+                'all' => 'All',
+                'approve' => 'Approve',
+                'management' => 'Post Management',
+                'create' => 'Create Post',
+                'edit' => 'Edit Post',
+
+                'table' => [
+                    'title' => 'Title',
+                    'summary' => 'Summary',
+                    'author' => 'Author',
+                    'cate'     => 'Category',
+                    'active'           => 'Active',
+                    'public'           => 'Public',
+                    'total'           => 'post total|posts total',
+                ],
+            ]
         ],
     ],
 

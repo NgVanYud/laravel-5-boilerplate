@@ -5,6 +5,8 @@ namespace App\Providers;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\Backend\Post\PostContract;
+use App\Repositories\Backend\Post\PostEloquentRepository;
 
 /**
  * Class AppServiceProvider.
@@ -58,6 +60,7 @@ class AppServiceProvider extends ServiceProvider
         // Set the default template for Pagination to use the included Bootstrap 4 template
         \Illuminate\Pagination\AbstractPaginator::defaultView('pagination::bootstrap-4');
         \Illuminate\Pagination\AbstractPaginator::defaultSimpleView('pagination::simple-bootstrap-4');
+
     }
 
     /**
@@ -81,5 +84,15 @@ class AppServiceProvider extends ServiceProvider
              */
             $loader->alias('Debugbar', \Barryvdh\Debugbar\Facade::class);
         }
+
+        $this->app->bind(
+            \App\Repositories\Backend\Post\PostContract::class,
+            \App\Repositories\Backend\Post\PostEloquentRepository::class
+        );
+
+        $this->app->bind(
+            \App\Repositories\Backend\Category\CategoryContract::class,
+            \App\Repositories\Backend\Category\CategoryEloquentRepository::class
+        );
     }
 }

@@ -81,7 +81,7 @@ return [
         /*
          * Whether a role must contain a permission or can be used standalone as a label
          */
-        'role_must_contain_permission' => true,
+        'role_must_contain_permission' => false,
     ],
 
     /*
@@ -90,4 +90,15 @@ return [
      * Makes it so social logins can not change passwords, etc.
      */
     'socialite_session_name' => 'socialite_provider',
+
+    /**
+     * List permission
+     */
+
+    'permissions' => [
+        'system_category_manager' => 'system category manager',
+        'system_user_manager' => 'system user manager',
+        'system_post_manager' => 'system post manager',
+        'post_manager' => 'post manager',
+    ],
 ];

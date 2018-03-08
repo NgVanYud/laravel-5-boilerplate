@@ -143,6 +143,11 @@ return [
                     'sort'                   => 'Sort',
                 ],
 
+                'category' => [
+                    'title'                   => 'Title',
+                    'sort'                   => 'Sort',
+                ],
+
                 'users' => [
                     'active'                  => 'Active',
                     'associated_roles'        => 'Associated Roles',
@@ -157,6 +162,16 @@ return [
                     'send_confirmation_email' => 'Send Confirmation E-mail',
                     'timezone'                => 'Timezone',
                     'language'                => 'Language',
+                ],
+
+                'posts' => [
+                    'active'                  => 'Active',
+                    'avatar'                    => 'Avatar',
+                    'confirmed'               => 'Confirmed',
+                    'title'                    => 'Title',
+                    'summary'               => 'Summary',
+                    'category'              => 'Category',
+                    'select_cate' =>        'Select Category',
                 ],
             ],
         ],

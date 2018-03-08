@@ -26,13 +26,29 @@ return [
             'confirmed'              => 'The user was successfully confirmed.',
             'created'             => 'The user was successfully created.',
             'deleted'             => 'The user was successfully deleted.',
-            'deleted_permanently' => 'The user was deleted permanently.',
+            'deleted_permanently' => 'The user was permanently deleted.',
             'restored'            => 'The user was successfully restored.',
             'session_cleared'      => "The user's session was successfully cleared.",
             'social_deleted' => 'Social Account Successfully Removed',
             'unconfirmed' => 'The user was successfully un-confirmed',
             'updated'             => 'The user was successfully updated.',
             'updated_password'    => "The user's password was successfully updated.",
+        ],
+
+        'categories' => [
+            'created' => 'The category was successfully created.',
+            'deleted' => 'The category was successfully deleted.',
+            'updated' => 'The category was successfully updated.',
+            'activated' => 'The category was successfully activated.',
+            'deactivated' => 'The category was successfully deactivated.',
+        ],
+
+        'posts' => [
+            'created' => 'The post was successfully created.',
+            'deleted' => 'The post was successfully deleted.',
+            'updated' => 'The post was successfully updated.',
+            'activated' => 'The post was successfully activated.',
+            'deactivated' => 'The post was successfully deactivated.',
         ],
     ],
 
