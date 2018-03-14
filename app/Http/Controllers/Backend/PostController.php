@@ -78,7 +78,7 @@ class PostController extends Controller
         $post = $this->post->getBySlug($slug);
         \DB::beginTransaction();
         $img = $request->file('avatar');
-        $img_path = $img->move(public_path('img/post'), $img->getClientOriginalName())->getRealPath();
+        $img_path = $img->move('/img/post', $img->getClientOriginalName())->getRealPath();
         $post = $this->post->updateById($post->id, [
             'title' => $request->title,
             'content' => $request->summary,

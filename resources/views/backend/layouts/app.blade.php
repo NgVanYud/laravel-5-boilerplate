@@ -19,10 +19,8 @@
     <!-- Check if the language is set to RTL, so apply the RTL layouts -->
     <!-- Otherwise apply the normal LTR layouts -->
     {{ style(mix('css/backend.css')) }}
-    <link rel="stylesheet" href="{{url('/plugins/animate/animate.css')}}">
-    <link rel="stylesheet" href="{{url('/plugins/bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{url('/plugins/summernote/dist/summernote.css')}}">
-
+    {{--<link rel="stylesheet" href="{{url('/plugins/animate/animate.css')}}">--}}
+    {{--    <link rel="stylesheet" href="{{url('/plugins/bootstrap/css/bootstrap.min.css')}}">--}}
     @stack('after-styles')
 </head>
 
@@ -57,9 +55,10 @@
     @stack('before-scripts')
     {!! script(mix('js/backend.js')) !!}
     @stack('after-scripts')
-    <script type="text/javascript" src="{{url('/plugins/jquery/jquery-3.3.1.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
-    <script type="text/javascript" src="{{url('/plugins/summernote/dist/summernote.min.js')}}"></script>
+    {{--<script type="text/javascript" src="{{url('/plugins/jquery/jquery-3.3.1.min.js')}}"></script>--}}
+    {{--<script type="text/javascript" src="{{url('/plugins/bootstrap/js/bootstrap.min.js')}}"></script>--}}
+    {{--<link rel="stylesheet" href="{{url('/plugins/summernote/dist/summernote.css')}}">--}}
+    {{--<script type="text/javascript" src="{{url('/plugins/summernote/dist/summernote.min.js')}}"></script>--}}
     @yield('after-script-end')
 
 </body>

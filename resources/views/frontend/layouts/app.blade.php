@@ -19,10 +19,13 @@
         <!-- Check if the language is set to RTL, so apply the RTL layouts -->
         <!-- Otherwise apply the normal LTR layouts -->
         {{ style(mix('css/frontend.css')) }}
+        {{--<link rel="stylesheet" href="{{url('/plugins/animate/animate.css')}}">--}}
+{{--        <link rel="stylesheet" href="{{url('/plugins/bootstrap/css/bootstrap.min.css')}}">--}}
+        <link href="css/blog-home.css" rel="stylesheet">
 
         @stack('after-styles')
     </head>
-    <body>
+    <body style="padding-top: 0;">
         <div id="app">
             @include('includes.partials.logged-in-as')
             @include('frontend.includes.nav')
@@ -40,4 +43,9 @@
 
         @include('includes.partials.ga')
     </body>
+<script type="text/javascript" src="{{url('/plugins/jquery/jquery-3.3.1.min.js')}}"></script>
+{{--<script type="text/javascript" src="{{url('/plugins/bootstrap/js/bootstrap.min.js')}}"></script>--}}
+{{--<link rel="stylesheet" href="{{url('/plugins/summernote/dist/summernote.css')}}">--}}
+
+<script type="text/javascript" src="{{url('/plugins/summernote/dist/summernote.min.js')}}"></script>
 </html>

@@ -96,9 +96,33 @@ return [
      */
 
     'permissions' => [
-        'system_category_manager' => 'system category manager',
-        'system_user_manager' => 'system user manager',
-        'system_post_manager' => 'system post manager',
-        'post_manager' => 'post manager',
+        'view_backend'              => 'view backend',
+        'system_category_manager'   => 'system category manager',
+        'system_user_manager'       => 'system user manager',
+        'system_post_manager'       => 'system post manager',
+        'post_manager'              => 'post manager',
     ],
+
+//    'roles' => [
+//        //-------------------------------------------------
+//        'admin'         => 'administrator',
+//                                'view backend',
+//                                'system category manager',
+//                                'system post manager',
+//                                'post manager',
+//                                'system user manager',
+//        //-------------------------------------------------
+//        'admod'         => 'admod',
+//                                'view backend',
+//                                'system category manager',
+//                                'system post manager',
+//                                'post manager',
+//        //-------------------------------------------------
+//        'author'        => 'author',
+//                                'post manager',
+//        //-------------------------------------------------
+//        'user'          => 'user',
+//                                'none'
+//        //-------------------------------------------------
+//    ]
 ];

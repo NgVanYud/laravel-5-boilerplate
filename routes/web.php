@@ -121,7 +121,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'backend/post', 'middleware'
 
 });
 
-//frontend
+//frontend post
 Route::group(['namespace' => 'Frontend', 'prefix' => 'frontend/post', 'middleware' => 'author'], function() {
     Route::get('all', [
         'as' => 'frontend.post.index',
@@ -159,3 +159,4 @@ Route::group(['namespace' => 'Frontend', 'prefix' => 'frontend/post', 'middlewar
 //    ]);
 
 });
+
